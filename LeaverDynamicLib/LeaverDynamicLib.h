@@ -10,10 +10,13 @@
 #include<iostream>
 #include <string>
 
-class leaver
+namespace LeaverDynamicLib
 {
-public:
-    std::string str;
-    leaver(std::string str_);
-    void LEAVERDYNAMICLIB_API leave();
-};
+    class leaver
+    {
+    public:
+        std::string str;
+        leaver(std::string str_);
+        void LEAVERDYNAMICLIB_API leave();
+    };
+}

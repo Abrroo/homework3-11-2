@@ -10,7 +10,7 @@ int main()
     std::string str;
     std::cout << "Write name: ";
     std::cin >> str;
-    leaver message(str);
+    LeaverDynamicLib::leaver message(str);
     message.leave();
     return 0;
 }
