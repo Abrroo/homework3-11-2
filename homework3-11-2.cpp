@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include "LeaverDynamicLib/LeaverDynamicLib.h"
+#include "LeaverDynamicLib.h"
 
 
 int main()

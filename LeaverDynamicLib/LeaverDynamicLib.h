@@ -1,9 +1,9 @@
 #pragma once
 
 #ifndef LEAVERDYNAMICLIB_EXPORTS
-#define LEAVERDYNAMICLIBRARY_API __declspec(dllexport)
+#define LEAVERDYNAMICLIB_API __declspec(dllexport)
 #else
-#define LEAVERDYNAMICLIBRARY_API __declspec(dllimport)
+#define LEAVERDYNAMICLIB_API __declspec(dllimport)
 #endif
 
 
@@ -15,5 +15,5 @@ class leaver
 public:
     std::string str;
     leaver(std::string str_);
-    LEAVERDYNAMICLIBRARY_API void leave();
+    void LEAVERDYNAMICLIB_API leave();
 };

@@ -8,5 +8,5 @@ leaver::leaver(std::string str_)
 
 void leaver::leave()
 {
-    std::cout << "До свидания, " << str << "!";
+    std::cout << "До свидания, " << str << "!!!";
 }
