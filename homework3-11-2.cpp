@@ -10,6 +10,7 @@ int main()
     std::string str;
     std::cout << "Write name: ";
     std::cin >> str;
-    Leaver C;
-    C.leave(str);
+    leaver message(str);
+    message.leave();
+    return 0;
 }
