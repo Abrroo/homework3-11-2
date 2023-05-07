@@ -1,15 +1,13 @@
-#include <iostream>
 #include "LeaverDynamicLib.h"
+#include <iostream>
 
-namespace LeaverDynamicLib
+
+Leaver::Leaver() {}
+Leaver::Leaver(std::string str)
 {
-    leaver::leaver(std::string str_)
-    {
-        this->str = str_;
-    }
-
-    void leaver::leave()
-    {
-        std::cout << "До свидания, " << str << "!!!";
-    }
+	this->_str = str;
+}
+void Leaver::leave(std::string _str)
+{
+	std::cout << "Good bay, " << _str << "!";
 }

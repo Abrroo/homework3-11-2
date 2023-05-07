@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 #ifdef LEAVERDYNAMICLIB_EXPORTS
 #define LEAVERDYNAMICLIB_API __declspec(dllexport)
@@ -6,17 +7,11 @@
 #define LEAVERDYNAMICLIB_API __declspec(dllimport)
 #endif
 
-
-#include<iostream>
-#include <string>
-
-namespace LeaverDynamicLib
+class Leaver
 {
-    class leaver
-    {
-    public:
-        std::string str;
-        leaver(std::string str_);
-        void LEAVERDYNAMICLIB_API leave();
-    };
-}
+public:
+	std::string _str;
+	LEAVERDYNAMICLIB_API Leaver();
+	LEAVERDYNAMICLIB_API Leaver(std::string str);
+	LEAVERDYNAMICLIB_API void  leave(std::string str);
+};

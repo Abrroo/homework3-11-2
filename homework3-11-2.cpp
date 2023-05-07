@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include "LeaverDynamicLib.h"
+#include <LeaverDynamicLib.h>
 
 
 int main()
@@ -10,7 +10,7 @@ int main()
     std::string str;
     std::cout << "Write name: ";
     std::cin >> str;
-    LeaverDynamicLib::leaver message(str);
-    message.leave();
+    Leaver message;
+    message.leave(str);
     return 0;
 }
